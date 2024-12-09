@@ -1,0 +1,5 @@
+Name    Input String    Result      Depth    Number of configurations  Paths
+------  --------------  --------  -------  --------------------------  -----------
+a plus  aaa             Accept.         3                           5  q1, , a, aa
+                                                                       q2, a, a, a
+                                                                       q3, , _, _a
