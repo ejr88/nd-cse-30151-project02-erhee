@@ -153,11 +153,12 @@ full_path = ""
 for i in path:
     full_path += i + "\n"
 
+avg_nondet = total_transitions / result # configurations / depth
 # write to output file
-output_file = "output.txt"
+output_file = "output2.txt"
 with open(output_file, "w") as file:
-  file.write(tabulate([[name[0], input_string, end_status, result, total_transitions, full_path]],
-               headers=['Name', 'Input String', 'Result', 'Depth', 'Number of configurations', 'Paths']))
+  file.write(tabulate([[name[0], input_string, end_status, result, total_transitions, avg_nondet, full_path]],
+               headers=['Name', 'Input String', 'Result', 'Depth', 'Number of configurations', 'Average nondeterminism', 'Paths']))
 
-print(tabulate([[name[0], input_string, end_status, result, total_transitions, full_path]],
-               headers=['Name', 'Input String', 'Result', 'Depth', 'Number of configurations', 'Paths']))
+print(tabulate([[name[0], input_string, end_status, result, total_transitions, avg_nondet, full_path]],
+               headers=['Name', 'Input String', 'Result', 'Depth', 'Number of configurations', 'Average nondeterminism', 'Paths']))
