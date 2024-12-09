@@ -1,5 +1,5 @@
-Name    Input String    Result      Depth    Number of configurations  Paths
-------  --------------  --------  -------  --------------------------  -------------
-a plus  aaaaa           Accept.         3                           5  q1, , a, aaaa
-                                                                       q2, a, a, aaa
-                                                                       q3, , _, _aaa
+Name    Input String    Result      Depth    Number of configurations    Average nondeterminism  Paths
+------  --------------  --------  -------  --------------------------  ------------------------  -------------
+a plus  aaaaa           Accept.         3                           5                   1.66667  q1, , a, aaaa
+                                                                                                 q2, a, a, aaa
+                                                                                                 q3, , _, _aaa

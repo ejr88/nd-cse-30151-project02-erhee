@@ -1,4 +1,4 @@
-Name                     Input String    Result       Depth    Number of configurations  Paths
------------------------  --------------  ---------  -------  --------------------------  ----------------
-a*b*c* Nondeterministic  aaabbbcc        Rejected.        9                          10  q0, , a, aabbbcc
-                                                                                         q3, c, c, abbbcc
+Name                     Input String    Result       Depth    Number of configurations    Average nondeterminism  Paths
+-----------------------  --------------  ---------  -------  --------------------------  ------------------------  ----------------
+a*b*c* Nondeterministic  aaabbbcc        Rejected.        9                          10                   1.11111  q0, , a, aabbbcc
+                                                                                                                   q3, c, c, abbbcc
